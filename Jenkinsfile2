@@ -16,7 +16,7 @@ node {
         sh "${mvnHome}/bin/mvn package"
     }
     stage('sonar-analysis') { 
-           withSonarQubeEnv('sonarqube') {
+           withSonarQubeEnv('Sonarqube') {
              sh '${mvnHome}/bin/mvn sonar:sonar'
         } 
     }
